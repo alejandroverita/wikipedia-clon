@@ -3,7 +3,7 @@
     --border-color:#a2a9b1;
     --limits-color: #c8ccd1;
     --blue-color: #3366cc;
-    
+
     /*---------------- Tipografia ----------------*/
     --article-counter--font-size: 12px;
 
@@ -50,3 +50,149 @@ a {
     width: 100%;
   }
   
+  /*-----------------------Main Globe--------------- */
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 100px repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 546px;
+    margin: 0 auto;
+    column-gap: 50px;
+    justify-items: center;
+    grid-template-areas:  " . langEs langEs . . langEn langEn . . "
+                          " langCn1 langCn1 . world world world langDe langDe . "
+                          " langPy langPy . world world world  langFr langFr langFr"
+                          " langIt langIt .  world world world  langCn2 langCn2 . "
+                          " .  langPt langPt . . langPo langPo . . ";
+  }
+
+  .featured__item {
+  width: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured__title {
+  color: var(--blue-color);
+  font-size: 16px;
+}
+
+.featured__title:hover {
+  text-decoration: underline;
+}
+
+.featured__article-counter {
+  color: var(--gray-color);
+  font-size: var(--article-counter--font-size);
+}
+
+.featured__img-container {
+  grid-area: world;
+  width:200px;
+  margin: 0;
+  margin-left: -25px;
+
+}
+.featured__world-logo {
+  width: 100%;
+}
+
+.langEs {
+    grid-area: langEs; 
+}
+
+.langCn1 {
+    grid-area: langCn1;
+}
+
+.langPy {
+    grid-area: langPy;
+    /* justify-self: start; */
+}
+
+.langIt {
+    grid-area: langIt;
+}
+
+.langPt {
+    grid-area: langPt;
+}
+
+.langEn {
+    grid-area: langEn;
+}
+
+.langDe {
+    grid-area: langDe;
+}
+
+.langFr {
+    grid-area: langFr;
+}
+
+.langCn2 {
+    grid-area: langCn2;
+}
+
+.langPo {
+    grid-area: langPo;
+}
+  
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin-top: 30px;
+}
+
+
+.search-form__input-container {
+    border: 1px solid var(--border-color);
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 20px;
+    border-radius : 3px;
+    border-right:none ;
+}
+
+.search-from__text, .search-form__drop-down {
+    border: 0;
+    background-color: white;
+}
+
+.search-form__drop-down {
+    color: var(--gray-color);
+}
+  
+.search-form__icon-container {
+    width: 56px;
+    height: 45px;
+    background-color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search-form--icon {
+    background-image: linear-gradient(transparent,transparent), url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-81a290a5.png");
+}
+  
+.search-form__button {
+    margin: 0;
+    background-position: 0 -669px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--blue-color);
+  
+}
