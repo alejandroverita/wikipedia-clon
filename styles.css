@@ -1,0 +1,52 @@
+:root {
+    --gray-color: #54595d;
+    --border-color:#a2a9b1;
+    --limits-color: #c8ccd1;
+    --blue-color: #3366cc;
+    
+    /*---------------- Tipografia ----------------*/
+    --article-counter--font-size: 12px;
+
+}
+
+
+body, h3, a, figure, p{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
+}
+
+.main-section {
+  padding-top: 50px;
+}
+
+/*---------------------Wiki Logo---------------------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-left: -25px;
+  }
+  .logo__img-container {
+    width: 176px;
+    margin: 0;
+  }
+  .logo__img{
+    width: 100%;
+  }
+  
